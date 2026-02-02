@@ -5,7 +5,7 @@
     --background-color-2: #ffc3a0;
     --button-color: #ff6b6b;
     --button-hover: #ff8787;
-    --text-color: #ff4757;
+    --text-color: #FFF1E6;
 
     /* Animations */
     --float-duration: 15s;
@@ -23,6 +23,7 @@ body {
     background: linear-gradient(135deg, var(--background-color-1), var(--background-color-2));
     font-family: Arial, sans-serif;
     overflow-x: hidden;
+    color: var(--text-color);
 }
 
 .container {
@@ -278,7 +279,6 @@ h2 {
     text-shadow: 2px 2px 4px rgba(255, 71, 87, 0.3);
 }
 
-
 .celebration-text {
     font-size: 3em;
     color: #ff4757;
@@ -315,4 +315,14 @@ h2 {
 .music-btn:hover {
     transform: scale(1.05);
     background: var(--secondary-color);
-} 
+}
+
+/* === Safe soft-crimson text override === */
+.container {
+    color: #C0362C;
+}
+
+.container h1,
+.container h2 {
+    color: #C0362C;
+}
